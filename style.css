@@ -90,3 +90,10 @@ select::-ms-expand {
 .select:hover::after {
   color: #00002c;
 }
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
