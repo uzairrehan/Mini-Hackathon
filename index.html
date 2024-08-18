@@ -3,51 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        padding: 0px;
-        margin: 0px;
-        background-color: rgb(15, 215, 255);
-        color: black;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        
-      }
-      main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       
-      }
-    </style>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://scalebranding.com/wp-content/uploads/2021/10/C-line-silver.jpg"
+      type="image/x-icon"
+    />
   </head>
-  <body> <main>
-    <h3>enter value :</h3>
-    <input type="number" id="num" />
-    <br />
-    <label for="toConvert">Choose type:</label>
-    <br />
-    <select name="toConvert" id="toConvert">
-      <option value="Celsius">Celsius</option>
-      <option value="Fahrenheit">Fahrenheit</option>
-      <option value="Kelvin">Kelvin</option>
-    </select>
-    <br />
-    <label for="toChange">Choose converted type:</label>
-    <br />
-    <select name="toChange" id="toChange">
-      <option value="Celsius">Celsius</option>
-      <option value="Fahrenheit">Fahrenheit</option>
-      <option value="Kelvin">Kelvin</option>
-    </select>
-    <br />
-    <button onclick="converter()">Convert</button>
+  <body>
+    <main>
+      <h3 class="h3">Temperature<br />Converter</h3>
 
-    <p id="output"></p>
-    <h3>History</h3>
-    <div id="history"></div>
-</main>
+      <input placeholder="Enter Value" class="input" type="number" id="num" />
+
+      <label for="toConvert">Value type :</label>
+      <div class="select">
+        <select name="toConvert" id="toConvert">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+      </div>
+
+      <label for="toChange">To convert type :</label>
+      <div class="select">
+        <select name="toChange" id="toChange">
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Celsius">Celsius</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+      </div>
+
+      <button onclick="converter()" class="button">Convert</button>
+      <h3>Output</h3>
+      <p id="output"></p>
+      <div>
+      <details>
+        <summary>
+        <h3>History</h3>
+
+        </summary>
+        <div id="history"></div>
+
+      </details>
+    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

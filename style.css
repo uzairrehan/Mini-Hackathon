@@ -1,0 +1,92 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #00002c;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  background-color: #00002c;
+}
+.input {
+  color: white;
+  border: 2px solid #008cff;
+  border-radius: 10px;
+  padding: 0px 25px;
+  background: transparent;
+  width: 266px;
+  height: 48px;
+}
+
+.input:active {
+  box-shadow: 2px 2px 15px #008cff inset;
+}
+.button {
+  background: #008cff;
+  border-radius: 999px;
+  box-shadow: #008cff 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  border: 0;
+}
+
+select {
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #00002c;
+  background-image: none;
+  cursor: pointer;
+  border: 2px solid #008cff;
+  border-radius: 10px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #008cff;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: #00002c;
+}

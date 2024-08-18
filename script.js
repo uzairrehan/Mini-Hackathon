@@ -6,7 +6,9 @@ const histor = document.getElementById("history");
 const hist = [];
 
 function converter() {
-  if (toConvert.value == "Celsius" && toChange.value == "Fahrenheit") {
+  if (num.value == "") {
+    return;
+  } else if (toConvert.value == "Celsius" && toChange.value == "Fahrenheit") {
     ctf();
   } else if (toConvert.value == "Celsius" && toChange.value == "Kelvin") {
     ctk();
